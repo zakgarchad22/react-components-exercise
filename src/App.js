@@ -10,7 +10,7 @@ import './App.css';
 // class App extends Component {
 
 //   showCompany(name, revenue) {
-//     return (<div id={name} >{name} makes {revenue} every year</div>)
+//     return (<div id={name} key={name} >{name} makes {revenue} every year</div>)
 //   }
 
 
@@ -32,7 +32,7 @@ class App extends Component {
     else return "hell-scape"
   }
   render() {
-    return <div className={this.getClassName(40)}></div>
+    return <div className={this.getClassName(10)}></div>
   }
 }
 
