@@ -10,7 +10,7 @@ import { mount, render, shallow, configure} from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
-describe("exercise2", () => {
+describe("exercise3", () => {
     it('Application should render without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<App />, div);
