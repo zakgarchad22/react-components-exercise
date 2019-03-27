@@ -7,8 +7,12 @@ import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
 import { MemoryRouter } from 'react-router-dom';
 import { mount, render, shallow, configure} from 'enzyme';
+import jsdom from "jsdom";
 
 configure({ adapter: new Adapter() });
+const dom = jsdom.jsdom('<!doctype html><html><body></body></html>');
+global.document = dom;
+global.window = dom.defaultView;
 
 describe("exercise3", () => {
     it('Application should render without crashing', () => {
@@ -21,19 +25,7 @@ describe("exercise3", () => {
          wrapper.instance().getClassName(40)
           let box = wrapper.find('div');
           console.log(box)
-          expect(box).toHaveProperty('background-color', 'aqua')
-      });
-    //   it("Passing a paramater between 15 and 30 should create a div with a class of 'fair'", () => {
-    //     const wrapper = shallow(<App />);
-    //    wrapper.instance().getClassName(25)
-    //     expect(wrapper.find('div').hasClass('hell-scape')).toBe(true);
-    // });
-    // it("Passing a paramater below 15 should create a div with a class of 'hell-scape'", () => {
-    //     const wrapper = shallow(<App />);
-    //    wrapper.instance().getClassName(10)
-    //     expect(wrapper.find('div').hasClass('hell-scape')).toBe(true);
-    // });
-      
+          expect(box.get(0).getDOMNode().getComputedStyle()).to.have.property({backgroundColor: 'red'})       });
 
 })
 
