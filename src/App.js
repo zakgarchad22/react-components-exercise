@@ -36,46 +36,46 @@ import './App.css';
 // export default App;
 
 // SPOT CHECK 3
-// class App extends Component {
-
-//   getMorningGreeting() {
-//     return <div>Good Morning</div>
-//   }
-
-//   getEveningGreeting() {
-//     return <div>Good Evening</div>
-//   }
-
-//   render() {
-//     return [
-//       this.getMorningGreeting(),
-//       this.getEveningGreeting(),
-//       <p>some text</p>
-//     ]
-//   }
-// }
-
-// export default App;
-
-// EXERCISE 1
-const companies = [
-  { name: "Tesla", revenue: 140 },
-  { name: "Microsoft", revenue: 300 },
-  { name: "Google", revenue: 600 }]
-
 class App extends Component {
 
-  showCompany(name, revenue) {
-    return (<div id={name} key={name} >{name} makes {revenue} every year</div>)
+  getMorningGreeting() {
+    return <div>Good Morning</div>
   }
 
+  getEveningGreeting() {
+    return <div>Good Evening</div>
+  }
 
   render() {
-    return companies.map(c => this.showCompany(c.name, c.revenue))
+    return [
+      this.getMorningGreeting(),
+      this.getEveningGreeting(),
+      <div>some text</div>
+    ]
   }
 }
 
-export default App
+export default App;
+
+// EXERCISE 1
+// const companies = [
+//   { name: "Tesla", revenue: 140 },
+//   { name: "Microsoft", revenue: 300 },
+//   { name: "Google", revenue: 600 }]
+
+// class App extends Component {
+
+//   showCompany(name, revenue) {
+//     return (<div id={name} key={name} >{name} makes {revenue} every year</div>)
+//   }
+
+
+//   render() {
+//     return companies.map(c => this.showCompany(c.name, c.revenue))
+//   }
+// }
+
+// export default App
 
 // EXERCISE 2
 // class App extends Component {
