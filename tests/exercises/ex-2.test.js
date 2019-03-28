@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import App from '../src/App';
+import App from '../../src/App';
 import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
@@ -34,10 +34,10 @@ describe("exercise2", () => {
     });
     it("Your render function should return a div with a className equal to your getClassName function", () => {
         App.prototype.getClassName = function () {
-            return "Corn"
+            return "mock"
         }
         const wrapper = mount(<App />);
-        expect(wrapper.find('div').hasClass('Corn')).toBe(true);
+        expect(wrapper.find('div').hasClass('mock')).toBe(true);
     });
 
 })

@@ -1,0 +1,35 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import assert from 'assert';
+import App from '../../src/App';
+import renderer from 'react-test-renderer';
+import Adapter from 'enzyme-adapter-react-16';
+import { wrap } from 'module';
+import { MemoryRouter } from 'react-router-dom';
+import { mount, render, shallow, configure} from 'enzyme';
+
+configure({ adapter: new Adapter() });
+
+describe("spot-check-1", () => {
+    it('Application should render without crashing', () => {
+        const div = document.createElement('div');
+        ReactDOM.render(<App />, div);
+        ReactDOM.unmountComponentAtNode(div);
+      });
+      
+      it("Your render function should return a JSX expression that calls your method inside an h1 tag", () => {
+        App.prototype.getStuff = function () {
+            return "mock"
+        }
+        const wrapper = mount(<App />);
+        let header = wrapper.find('h1').text()
+        console.log(header)
+        expect(header).toContain("mock");
+    });
+})
+
+
+
+
+
+

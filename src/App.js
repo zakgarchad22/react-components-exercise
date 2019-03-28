@@ -1,6 +1,62 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
+
+// SPOT CHECK 1
+// class App extends Component {
+//   getStuff(){
+//     return "Wild function'ed text"}
+
+//   render() {
+//     return (<h1>Stuff: {this.getStuff()}</h1>)
+//   }
+// }
+
+// export default App;
+
+// SPOT CHECK 2
+// class App extends Component {
+
+//   getMorningGreeting() {
+//     return <div>Good Morning</div>
+//   }
+
+//   getEveningGreeting() {
+//     return <div>Good Evening</div>
+//   }
+
+//   render() {
+//     return new Date().getHours() > 12 ?
+//       this.getEveningGreeting() :
+//       this.getMorningGreeting()
+//   }
+// }
+
+// export default App;
+
+// SPOT CHECK 3
+// class App extends Component {
+
+//   getMorningGreeting() {
+//     return <div>Good Morning</div>
+//   }
+
+//   getEveningGreeting() {
+//     return <div>Good Evening</div>
+//   }
+
+//   render() {
+//     return [
+//       this.getMorningGreeting(),
+//       this.getEveningGreeting(),
+//       <p>some text</p>
+//     ]
+//   }
+// }
+
+// export default App;
+
 // EXERCISE 1
 // const companies = [
 //   { name: "Tesla", revenue: 140 },
@@ -37,3 +93,4 @@ class App extends Component {
 }
 
 export default App;
+
