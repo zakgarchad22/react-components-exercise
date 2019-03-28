@@ -10,7 +10,7 @@ import { mount, render, shallow, configure} from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
-describe("spot-check-3", () => {
+describe("spotcheck3", () => {
     it('Application should render without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<App />, div);
@@ -31,13 +31,11 @@ describe("spot-check-3", () => {
         }
         const wrapper = mount(<App />);
         let text = wrapper.find('div').at(1).text()
-        console.log(text)
         expect(text).toBe("mock");
     });
     it('The third item in the array that you return in your render function should be a <p> element which says "some text" ', () => {
         const wrapper = mount(<App />);
         let text = wrapper.find('p').text()
-        console.log(text)
         expect(text).toBe("some text");
     });
 })

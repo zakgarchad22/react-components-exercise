@@ -19,7 +19,6 @@ describe("exercise2", () => {
     it("Passing a parameter above 30 should create a div with a class of 'hell-scape'", () => {
         let input = 40
         let expectedOutput = 'hell-scape'
-        console.log(App.prototype.getClassName(input))
         expect(App.prototype.getClassName(input)).toBe(expectedOutput)
     });
     it("Passing a parameter between 15 and 30 should create a div with a class of 'fair'", () => {

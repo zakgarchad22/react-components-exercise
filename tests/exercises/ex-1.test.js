@@ -26,7 +26,6 @@ describe("exercise1", () => {
       it('The second div should say, Microsoft makes 300 every year', () => {
         const wrapper = mount(<App />);          
         let microsoftDiv = wrapper.find('#Microsoft').text();
-        console.log(microsoftDiv)
         expect(microsoftDiv).toBe("Microsoft makes 300 every year");
       });
 

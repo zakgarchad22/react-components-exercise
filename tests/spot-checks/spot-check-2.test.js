@@ -10,7 +10,7 @@ import { mount, render, shallow, configure} from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
-describe("spot-check-2", () => {
+describe("spotcheck2", () => {
     it('Application should render without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<App />, div);

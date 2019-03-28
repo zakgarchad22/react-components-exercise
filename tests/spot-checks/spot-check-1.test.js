@@ -10,7 +10,7 @@ import { mount, render, shallow, configure} from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
-describe("spot-check-1", () => {
+describe("spotcheck1", () => {
     it('Application should render without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<App />, div);
@@ -23,7 +23,6 @@ describe("spot-check-1", () => {
         }
         const wrapper = mount(<App />);
         let header = wrapper.find('h1').text()
-        console.log(header)
         expect(header).toContain("mock");
     });
 })
