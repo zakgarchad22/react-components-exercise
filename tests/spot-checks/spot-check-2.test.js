@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
 import { MemoryRouter } from 'react-router-dom';
-import { mount, render, shallow, configure} from 'enzyme';
+import { mount, render, shallow, configure } from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
@@ -15,20 +15,12 @@ describe("spotcheck2", () => {
         const div = document.createElement('div');
         ReactDOM.render(<App />, div);
         ReactDOM.unmountComponentAtNode(div);
-      });
-      
-      it("Your render function should return an invocation of one of your methods using a conditional statement", () => {
-        expect(App.prototype.getMorningGreeting, 'You must define the getMorningGreeting method in your App component').toBeDefined()
-        expect(App.prototype.getEveningGreeting, 'You must define the getEvening method in your App component').toBeDefined()
-        App.prototype.getEveningGreeting = function () {
-            return <div>mock</div>
-        }
-        App.prototype.getMorningGreeting = function () {
-            return <div>mock</div>
-        }
+    });
+
+    it("The first div rendered on your page should have an id of 'nav'", () => {
         const wrapper = mount(<App />);
-        let text = wrapper.find('div').text()
-        expect(text).toBe("mock");
+        let navDiv = wrapper.find('#nav')
+        expect(navDiv.exists(), "There should be a div with an id of 'nav'").toBeTruthy()
     });
 })
 
