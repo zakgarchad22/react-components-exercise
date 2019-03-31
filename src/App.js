@@ -16,94 +16,73 @@ import './App.css';
 // export default Sum;
 
 // SPOT CHECK 2
-class NavBar extends Component {
-  render() {
-    return (
-      <div id="nav">
-        <span>Home</span>
-        <span>About</span>
-      </div>
-    )
-  }
-}
-
-class LandingPage extends Component {
-  render() {
-    return <h1>Welcome!</h1>
-  }
-}
-class App extends Component {
-
-  render() {
-    return (
-      <div className="app">
-        <NavBar />
-        <LandingPage />
-      </div>
-    )
-  }
-}
-
-export default App
-
-// SPOT CHECK 3
-// class App extends Component {
-
-//   getMorningGreeting() {
-//     return <div>Good Morning</div>
-//   }
-
-//   getEveningGreeting() {
-//     return <div>Good Evening</div>
-//   }
-
+// class NavBar extends Component {
 //   render() {
-//     return [
-//       this.getMorningGreeting(),
-//       this.getEveningGreeting(),
-//       <div>some text</div>
-//     ]
+//     return (
+//       <div id="nav">
+//         <span>Home</span>
+//         <span>About</span>
+//       </div>
+//     )
 //   }
 // }
 
-// export default App;
-
-// EXERCISE 1
-// const companies = [
-//   { name: "Tesla", revenue: 140 },
-//   { name: "Microsoft", revenue: 300 },
-//   { name: "Google", revenue: 600 }]
-
+// class LandingPage extends Component {
+//   render() {
+//     return <h1>Welcome!</h1>
+//   }
+// }
 // class App extends Component {
 
-//   showCompany(name, revenue) {
-//     return (<div id={name} key={name} >{name} makes {revenue} every year</div>)
-//   }
-
-
 //   render() {
-//     return companies.map(c => this.showCompany(c.name, c.revenue))
+//     return (
+//       <div className="app">
+//         <NavBar />
+//         <LandingPage />
+//       </div>
+//     )
 //   }
 // }
 
 // export default App
 
-// EXERCISE 2
-// class App extends Component {
+// SPOT CHECK 3
 
-//   getClassName(temperature) {
-//     if (temperature < 15) {
-//       return "freezing"
-//     }
-//     else if (temperature > 15 && temperature < 30) {
-//       return "fair"
-//     }
-//     else return "hell-scape"
-//   }
-//   render() {
-//     return <div className={this.getClassName(10)}></div>
-//   }
-// }
-
+// localStorage
 // export default App;
 
+// SPOT CHECK 4
+
+// const Banner = () => <div className="banner">THE LOGO</div>
+
+// export default Banner
+
+// export default App
+
+// SPOT CHECK 5
+export class About extends Component {
+  render() {
+    return (
+      <div>
+        <SignUp />
+        <Blurb />
+      </div>
+    )
+  }
+}
+
+export class SignUp extends Component {
+  render() {
+    return (
+      <div>
+        <input type="text" placeholder="Username" />
+      </div>
+    )
+  }
+}
+
+export class Blurb extends Component {
+  render() {
+    return <div>This is a great site.</div>
+  }
+}

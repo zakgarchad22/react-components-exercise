@@ -22,6 +22,12 @@ describe("spotcheck2", () => {
         let navDiv = wrapper.find('#nav')
         expect(navDiv.exists(), "There should be a div with an id of 'nav'").toBeTruthy()
     });
+    it("You must render an h1 element which says welcome after the NavBar component", () => {
+        const wrapper = mount(<App />);
+        let welcome = wrapper.find('.app').children().at(1)
+        expect(welcome.exists(), "There should be an h1 element after the NavBar div").toBeTruthy()
+        expect(welcome.text().trim(), "The h1 text must say 'Welcome!'").toBe('Welcome!')
+    });
 })
 
 
