@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import App from '../../src/App';
 import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
 import { MemoryRouter } from 'react-router-dom';
 import { mount, render, shallow, configure } from 'enzyme';
+import App from '../../src/App';
+import Spamalot from '../../src/components/Spamalot';
+import Spam from '../../src/components/Spam';
 
 configure({ adapter: new Adapter() });
 
@@ -16,33 +18,17 @@ describe("exercise2", () => {
         ReactDOM.render(<App />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
-    it("Passing a parameter above 30 should create a div with a class of 'hell-scape'", () => {
-        let input = 40
-        let expectedOutput = 'hell-scape'
-        expect(App.prototype.getClassName, 'You must define the getClassName method in your App component').toBeDefined()
-        expect(App.prototype.getClassName(input)).toBe(expectedOutput)
-    });
-    it("Passing a parameter between 15 and 30 should create a div with a class of 'fair'", () => {
-        let input = 20
-        let expectedOutput = 'fair'
-        expect(App.prototype.getClassName, 'You must define the getClassName method in your App component').toBeDefined()
-        expect(App.prototype.getClassName(input)).toBe(expectedOutput)
-    });
-    it("Passing a parameter below 15 should create a div with a class of 'freezing'", () => {
-        let input = 10
-        let expectedOutput = 'freezing'
-        expect(App.prototype.getClassName, 'You must define the getClassName method in your App component').toBeDefined()
-        expect(App.prototype.getClassName(input)).toBe(expectedOutput)
-    });
-    it("Your render function should return a div with a className equal to your getClassName function", () => {
-        expect(App.prototype.getClassName, 'You must define the getClassName method in your App component').toBeDefined()
-        App.prototype.getClassName = function () {
-            return "mock"
-        }
-        const wrapper = mount(<App />);
-        expect(wrapper.find('div').hasClass('mock')).toBe(true);
-    });
-
+    it('Your App component should render your Spamalot component', () => {
+    const wrapper = mount(<App />);
+    let spamalotComponent = wrapper.find(Spamalot);
+    expect(spamalotComponent).toHaveLength(1);
+    })
+    it('Your Spamalot component should render your Spam functional component', () => {
+        const wrapper = mount(<Spamalot />);
+        let spamComponent = wrapper.find(Spam);
+        expect(spamComponent.exists(), 'You must create a functional Component called Spam').toBeTruthy()
+        expect(spamComponent, 'The Spamalot component must render the Spam component 500 times').toHaveLength(500);
+        })
 })
 
 

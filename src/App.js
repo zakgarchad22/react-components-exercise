@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import {Dummy} from './components/Dummy'
+import Spamalot from './components/Spamalot';
 
 
 
@@ -60,29 +62,52 @@ import './App.css';
 // export default App
 
 // SPOT CHECK 5
-export class About extends Component {
-  render() {
-    return (
-      <div>
-        <SignUp />
-        <Blurb />
-      </div>
-    )
-  }
-}
+// export class About extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <SignUp />
+//         <Blurb />
+//       </div>
+//     )
+//   }
+// }
 
-export class SignUp extends Component {
-  render() {
-    return (
-      <div>
-        <input type="text" placeholder="Username" />
-      </div>
-    )
-  }
-}
+// export class SignUp extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <input type="text" placeholder="Username" />
+//       </div>
+//     )
+//   }
+// }
 
-export class Blurb extends Component {
-  render() {
-    return <div>This is a great site.</div>
+// export class Blurb extends Component {
+//   render() {
+//     return <div>This is a great site.</div>
+//   }
+// }
+
+
+// EXERCISE 1
+
+//  class App extends Component {
+//   render(){
+//     return<Dummy />
+//   }
+// }
+
+// export default App
+
+// EXERCISE 2
+
+class App extends Component{
+  render(){
+    return <Spamalot />
   }
 }
+export default App
+
+
+

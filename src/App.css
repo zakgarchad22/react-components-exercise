@@ -1,7 +1,7 @@
-div{
+/* div{
     width: 300px;
     height: 300px
-}
+} */
 
 .freezing{
     background-color: aqua
@@ -12,3 +12,8 @@ div{
 .hell-scape{
     background-color: red
 }
+
+#root{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr)
+  }
