@@ -17,9 +17,9 @@ describe("spotcheck4", () => {
         ReactDOM.unmountComponentAtNode(div);
     });
     it("You must render a div with a class of banner which says 'THE LOGO'", () => {
-    const wrapper = mount(<App />);
-    expect(banner.exists(), "There should be a div with a class of 'banner'").toBeTruthy()
-    expect(banner.text().toUpperCase().trim(), "Your div should have the text 'THE LOGO'").toBe('THE LOGO')
+        const wrapper = mount(<App />);
+        expect(banner.exists(), "There should be a div with a class of 'banner'").toBeTruthy()
+        expect(banner.text().toUpperCase().trim(), "Your div should have the text 'THE LOGO'").toBe('THE LOGO')
     })
 })
 

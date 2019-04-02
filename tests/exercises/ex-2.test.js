@@ -19,16 +19,16 @@ describe("exercise2", () => {
         ReactDOM.unmountComponentAtNode(div);
     });
     it('Your App component should render your Spamalot component', () => {
-    const wrapper = mount(<App />);
-    let spamalotComponent = wrapper.find(Spamalot);
-    expect(spamalotComponent).toHaveLength(1);
+        const wrapper = mount(<App />);
+        let spamalotComponent = wrapper.find(Spamalot);
+        expect(spamalotComponent).toHaveLength(1);
     })
     it('Your Spamalot component should render your Spam functional component', () => {
         const wrapper = mount(<Spamalot />);
         let spamComponent = wrapper.find(Spam);
         expect(spamComponent.exists(), 'You must create a functional Component called Spam').toBeTruthy()
         expect(spamComponent, 'The Spamalot component must render the Spam component 500 times').toHaveLength(500);
-        })
+    })
 })
 
 

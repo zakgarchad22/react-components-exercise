@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Dummy} from './components/Dummy'
+import { Dummy } from './components/Dummy'
 import Spamalot from './components/Spamalot';
+import NavBar from './components/NavBar';
+import Checkout from './components/Checkout';
+import Menu from './components/Menu';
 
 
 
@@ -102,12 +105,28 @@ import Spamalot from './components/Spamalot';
 
 // EXERCISE 2
 
-class App extends Component{
-  render(){
-    return <Spamalot />
+// class App extends Component{
+//   render(){
+//     return <Spamalot />
+//   }
+// }
+// export default App
+
+// EXERCISE 3
+// draw component tree
+
+// EXERCISE 4
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <Menu />
+        <Checkout />
+      </div>)
   }
 }
 export default App
-
 
 

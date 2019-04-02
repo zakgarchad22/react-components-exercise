@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import {About, SignUp, Blurb} from '../../src/App';
+import { About, SignUp, Blurb } from '../../src/App';
 import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
@@ -17,15 +17,15 @@ describe("spotcheck5", () => {
         ReactDOM.unmountComponentAtNode(div);
     });
     it('Your About component should render your SignUp component', () => {
-    const wrapper = mount(<About />);
-    let signupComponents = wrapper.find(SignUp);
-    expect(signupComponents).toHaveLength(1);
+        const wrapper = mount(<About />);
+        let signupComponents = wrapper.find(SignUp);
+        expect(signupComponents).toHaveLength(1);
     })
     it('Your About component should render your SignUp component', () => {
         const wrapper = mount(<About />);
         let blurbComponent = wrapper.find(Blurb);
         expect(blurbComponent).toHaveLength(1);
-        })
+    })
 })
 
 
