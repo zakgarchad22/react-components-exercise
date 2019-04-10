@@ -9,47 +9,41 @@ import Menu from './components/Menu';
 
 
 // SPOT CHECK 1
-// class Sum extends Component {
-//   render() {
-//     let num1 = 57;
-//     let num2 = -12;
-//     return (
-//       <div>The sum is {num1 + num2}</div>
-//     );
-//   }
-// }
-// export default Sum;
+class Sum extends Component {
+  render() {
+    return (
+      <div></div>
+    );
+  }
+}
+export default Sum;
 
 // SPOT CHECK 2
-// class NavBar extends Component {
-//   render() {
-//     return (
-//       <div id="nav">
-//         <span>Home</span>
-//         <span>About</span>
-//       </div>
-//     )
-//   }
-// }
+class NavBar extends Component {
+  render() {
+    return (
+      <div>
+      </div>
+    )
+  }
+}
 
-// class LandingPage extends Component {
-//   render() {
-//     return <h1>Welcome!</h1>
-//   }
-// }
-// class App extends Component {
+class LandingPage extends Component {
+  render() {
+    return 
+  }
+}
 
-//   render() {
-//     return (
-//       <div className="app">
-//         <NavBar />
-//         <LandingPage />
-//       </div>
-//     )
-//   }
-// }
+class App extends Component {
+  render() {
+    return (
+      <div>
+      </div>
+    )
+  }
+}
 
-// export default App
+export default App
 
 // SPOT CHECK 3
 
@@ -58,59 +52,56 @@ import Menu from './components/Menu';
 
 // SPOT CHECK 4
 
-// const Banner = () => <div className="banner">THE LOGO</div>
+const Banner
 
-// export default Banner
+export default Banner
 
-// export default App
+export default App
 
 // SPOT CHECK 5
-// export class About extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <SignUp />
-//         <Blurb />
-//       </div>
-//     )
-//   }
-// }
+export class About extends Component {
+  render() {
+    return (
+      <div>
+      </div>
+    )
+  }
+}
 
-// export class SignUp extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <input type="text" placeholder="Username" />
-//       </div>
-//     )
-//   }
-// }
+export class SignUp extends Component {
+  render() {
+    return (
+      <div>
+      </div>
+    )
+  }
+}
 
-// export class Blurb extends Component {
-//   render() {
-//     return <div>This is a great site.</div>
-//   }
-// }
+export class Blurb extends Component {
+  render() {
+    return 
+  }
+}
 
 
 // EXERCISE 1
 
-//  class App extends Component {
-//   render(){
-//     return<Dummy />
-//   }
-// }
+ class App extends Component {
+  render(){
+    return
+  }
+}
 
-// export default App
+export default App
 
 // EXERCISE 2
 
-// class App extends Component{
-//   render(){
-//     return <Spamalot />
-//   }
-// }
-// export default App
+class App extends Component{
+  render(){
+    return 
+  }
+}
+export default App
 
 // EXERCISE 3
 // draw component tree
@@ -121,9 +112,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <Menu />
-        <Checkout />
       </div>)
   }
 }
