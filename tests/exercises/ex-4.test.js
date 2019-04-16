@@ -47,7 +47,6 @@ describe("exercise4", () => {
         let itemComponent = wrapper.find(Item).first();
         let navComponent = wrapper.find(NavBar);
         let menuComponent = wrapper.find(Menu);
-        console.log(menuComponent.text())
         let checkoutComponent = wrapper.find(Checkout);
         expect(itemComponent.text(), "The Item component should render a div with the word 'Item'").toBe('Item');
         expect(navComponent.text(), "The NavBar component should render a div with the word 'NavBar'").toBe('NavBar');

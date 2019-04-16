@@ -9,35 +9,50 @@ import Menu from './components/Menu';
 
 
 // SPOT CHECK 1
-class Sum extends Component {
-  render() {
-    return (
-      <div></div>
-    );
-  }
+export class Sum extends Component {
+  // YOUR CODE HERE...
 }
-export default Sum;
 
 // SPOT CHECK 2
-class NavBar extends Component {
-  render() {
-    return (
-      <div>
-      </div>
-    )
-  }
+class MenuBar extends Component {
+  // YOUR CODE HERE...
 }
 
 class LandingPage extends Component {
-  render() {
-    return 
-  }
+  // YOUR CODE HERE...
+}
+class About extends Component {
+  // YOUR CODE HERE...
+}
+class Profile extends Component {
+  // YOUR CODE HERE...
 }
 
 class App extends Component {
+
   render() {
     return (
-      <div>
+      <div className="app">
+        <div className="exercise" id="spotcheck-2">
+          <label>Spotcheck 2:</label>
+          {/* YOUR CODE HERE... */}
+        </div>
+        <div className="exercise" id="spotcheck-3">
+          <label>Spotcheck 3:</label>
+          {/* YOUR CODE HERE... */}
+        </div>
+        <div className="exercise" id="ex-1">
+          <label>Exercise 1:</label>
+          {/* YOUR CODE HERE... */}
+        </div>
+        <div className="exercise" id="ex-2">
+          <label>Exercise 2:</label>
+          {/* YOUR CODE HERE... */}
+        </div>
+        <div className="exercise" id="ex-4">
+          <label>Exercise 4:</label>
+          {/* YOUR CODE HERE... */}
+        </div>
       </div>
     )
   }
@@ -45,25 +60,16 @@ class App extends Component {
 
 export default App
 
-// SPOT CHECK 3
-
-// localStorage
-// export default App;
 
 // SPOT CHECK 4
+{/* YOUR CODE HERE... */}
 
-const Banner
-
-export default Banner
-
-export default App
 
 // SPOT CHECK 5
-export class About extends Component {
+export class AboutUs extends Component {
   render() {
     return (
-      <div>
-      </div>
+ {/* YOUR CODE HERE... */}
     )
   }
 }
@@ -71,50 +77,13 @@ export class About extends Component {
 export class SignUp extends Component {
   render() {
     return (
-      <div>
-      </div>
+{/* YOUR CODE HERE... */}
     )
   }
 }
 
 export class Blurb extends Component {
   render() {
-    return 
+{/* YOUR CODE HERE... */}
   }
 }
-
-
-// EXERCISE 1
-
- class App extends Component {
-  render(){
-    return
-  }
-}
-
-export default App
-
-// EXERCISE 2
-
-class App extends Component{
-  render(){
-    return 
-  }
-}
-export default App
-
-// EXERCISE 3
-// draw component tree
-
-// EXERCISE 4
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-      </div>)
-  }
-}
-export default App
-
-

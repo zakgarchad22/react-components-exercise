@@ -16,7 +16,6 @@ describe("spotcheck2", () => {
         ReactDOM.render(<App />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
-
     it("The first div rendered on your page should have an id of 'nav'", () => {
         const wrapper = mount(<App />);
         let navDiv = wrapper.find('#nav')
@@ -24,7 +23,7 @@ describe("spotcheck2", () => {
     });
     it("You must render an h1 element which says welcome after the NavBar component", () => {
         const wrapper = mount(<App />);
-        let welcome = wrapper.find('.app').children().at(1)
+        let welcome = wrapper.find('#spotcheck-2').children().at(2)
         expect(welcome.exists(), "There should be an h1 element after the NavBar div").toBeTruthy()
         expect(welcome.text().trim(), "The h1 text must say 'Welcome!'").toBe('Welcome!')
     });

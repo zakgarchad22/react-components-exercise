@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import assert from 'assert';
 import App from '../../src/App';
-import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
-import { wrap } from 'module';
-import { MemoryRouter } from 'react-router-dom';
-import { mount, render, shallow, configure } from 'enzyme';
+import { mount, configure } from 'enzyme';
 import { Dummy } from '../../src/components/Dummy';
 
 configure({ adapter: new Adapter() });
@@ -20,7 +16,6 @@ describe("exercise1", () => {
   it('Your App component should render your Dummy component', () => {
     const wrapper = mount(<App />);
     let dummyComponent = wrapper.find(Dummy);
-    console.log(dummyComponent)
     expect(dummyComponent.length).toEqual(1);
   })
   it('Your Dummy component should contain an input', () => {
