@@ -17,7 +17,7 @@ describe("exercise2", () => {
     it('Your App component should render your Spamalot component', () => {
         const wrapper = mount(<App />);
         let spamalotComponent = wrapper.find(Spamalot);
-        expect(spamalotComponent).toHaveLength(1);
+        expect(spamalotComponent, 'could not find Spamalot component').toHaveLength(1);
     })
     it('Your Spamalot component should render your Spam functional component', () => {
         const wrapper = mount(<Spamalot />);

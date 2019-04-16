@@ -16,7 +16,7 @@ describe("exercise1", () => {
   it('Your App component should render your Dummy component', () => {
     const wrapper = mount(<App />);
     let dummyComponent = wrapper.find(Dummy);
-    expect(dummyComponent.length).toEqual(1);
+    expect(dummyComponent.exists(), "could not find 'Dummy' component").toBeTruthy()
   })
   it('Your Dummy component should contain an input', () => {
     const wrapper = mount(<Dummy />);
