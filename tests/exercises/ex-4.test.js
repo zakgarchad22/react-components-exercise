@@ -48,6 +48,10 @@ describe("exercise4", () => {
         let navComponent = wrapper.find(NavBar);
         let menuComponent = wrapper.find(Menu);
         let checkoutComponent = wrapper.find(Checkout);
+        expect(itemComponent.exists(), 'could not find Item component').toBeTruthy()
+        expect(navComponent.exists(), 'could not find Nav component').toBeTruthy()
+        expect(menuComponent.exists(), 'could not find Menu component').toBeTruthy()
+        expect(checkoutComponent.exists(), 'could not find Checkout component').toBeTruthy()
         expect(itemComponent.text(), "The Item component should render a div with the word 'Item'").toBe('Item');
         expect(navComponent.text(), "The NavBar component should render a div with the word 'NavBar'").toBe('NavBar');
         expect(menuComponent.text(), "The Menu component should render a div with the word 'Menu'").toContain('Menu');
