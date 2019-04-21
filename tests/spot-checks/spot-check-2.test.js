@@ -18,14 +18,16 @@ describe("spotcheck2", () => {
     });
     it("The first div rendered on your page should have an id of 'nav'", () => {
         const wrapper = mount(<App />);
-        let navDiv = wrapper.find('#nav')
+        let navDiv = wrapper.find('#spotcheck-2 > MenuBar > #nav');
         expect(navDiv.exists(), "There should be a div with an id of 'nav'").toBeTruthy()
     });
-    it("You must render an h1 element which says welcome after the NavBar component", () => {
-        const wrapper = mount(<App />);
-        let welcome = wrapper.find('#spotcheck-2').children().at(2)
+    it("You must render a LandingPage component containing an h1 element which says welcome after the NavBar component", () => {
+        const expectedMessage = "Welcome!";
+        const wrapper = mount(<App />); 
+        let welcome = wrapper.find('#spotcheck-2 > LandingPage');
         expect(welcome.exists(), "There should be an h1 element after the NavBar div").toBeTruthy()
-        expect(welcome.text().trim(), "The h1 text must say 'Welcome!'").toBe('Welcome!')
+        const actualText = welcome.text().trim();
+        expect(actualText, `The h1 text must say '${expectedMessage}. Instead we found ${actualText}'`).toBe('Welcome!')
     });
 })
 

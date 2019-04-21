@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { AboutUs, SignUp, Blurb } from '../../src/App';
+import App, { AboutUs, SignUp, Blurb } from '../../src/App';
 import Adapter from 'enzyme-adapter-react-16';
-import { mount, configure } from 'enzyme';
+import { mount, render, configure } from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
@@ -12,15 +12,22 @@ describe("spotcheck5", () => {
         ReactDOM.render(<AboutUs />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
+
+    it('You should render the AboutUs component inside #spotcheck-5', () => {
+        const wrapper = mount(<App />);
+        let aboutUsComponent = wrapper.find('#spotcheck-5 > AboutUs');
+        expect(aboutUsComponent.exists(), 'Could not find an AboutUs component inside the #spotcheck-5 div').toBeTruthy();
+    })
+
     it('Your About component should render your SignUp component', () => {
         const wrapper = mount(<AboutUs />);
         let signupComponents = wrapper.find(SignUp);
-        expect(signupComponents, 'could not find a SignUp component').toHaveLength(1);
+        expect(signupComponents, 'Could not find a SignUp component inside AboutUs component').toHaveLength(1);
     })
     it('Your About component should render your SignUp component', () => {
         const wrapper = mount(<AboutUs />);
         let blurbComponent = wrapper.find(Blurb);
-        expect(blurbComponent, 'could not find a Blurb component').toHaveLength(1);
+        expect(blurbComponent, 'Could not find a Blurb component inside AboutUs component').toHaveLength(1);
     })
 })
 
