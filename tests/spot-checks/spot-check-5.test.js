@@ -13,6 +13,7 @@ describe("spotcheck5", () => {
         ReactDOM.unmountComponentAtNode(div);
     });
 
+    
     it('You should render the AboutUs component inside #spotcheck-5', () => {
         const wrapper = mount(<App />);
         let aboutUsComponent = wrapper.find('#spotcheck-5 > AboutUs');
