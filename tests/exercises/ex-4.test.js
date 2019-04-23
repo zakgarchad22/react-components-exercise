@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
 import { MemoryRouter } from 'react-router-dom';
 import { mount, render, shallow, configure } from 'enzyme';
-import App from '../../src/App';
+import {App} from '../../src/App';
 import NavBar from '../../src/components/NavBar';
 import Menu from '../../src/components/Menu';
 import Checkout from '../../src/components/Checkout';

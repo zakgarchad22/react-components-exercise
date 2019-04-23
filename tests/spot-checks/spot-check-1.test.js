@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import Sum from '../../src/App';
+import {Sum} from '../../src/App';
 import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';

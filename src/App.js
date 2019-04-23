@@ -15,23 +15,7 @@ export class Sum extends Component {
 
 // SPOT CHECK 2
 class MenuBar extends Component {
-
-  render() {
-  
-  return (
-  
-  <div id="nav">
-  
-  <span>Home</span>
-  
-  <span>About</span>
-  
-  </div>
-  
-  )
-  
-  }
-  
+  // YOUR CODE HERE...
   }
   
   
@@ -53,7 +37,7 @@ class Profile extends Component {
   // YOUR CODE HERE...
 }
 
-class App extends Component {
+export class App extends Component {
 
   render() {
     return (
@@ -85,8 +69,6 @@ class App extends Component {
     )
   }
 }
-
-export default App
 
 
 // SPOT CHECK 4

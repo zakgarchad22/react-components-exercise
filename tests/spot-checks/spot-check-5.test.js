@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App, { AboutUs, SignUp, Blurb } from '../../src/App';
+import { App, AboutUs, SignUp, Blurb } from '../../src/App';
 import Adapter from 'enzyme-adapter-react-16';
 import { mount, render, configure } from 'enzyme';
 
