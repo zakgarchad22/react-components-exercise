@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import assert from 'assert';
 import Sum from '../../src/App';
-import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
-import { wrap } from 'module';
-import { MemoryRouter } from 'react-router-dom';
-import { mount, render, shallow, configure } from 'enzyme';
+import { mount, configure } from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
@@ -16,7 +12,6 @@ describe("spotcheck1", () => {
     ReactDOM.render(<Sum />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
-
   it('You must render a div on the page with the sum of num1 and num2', () => {
     const wrapper = mount(<Sum />);
     let text = wrapper.find('div')
