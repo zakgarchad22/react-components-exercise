@@ -1,19 +1,21 @@
-/* div{
-    width: 300px;
-    height: 300px
-} */
-
-.freezing{
-    background-color: aqua
-}
-.fair{
-    background-color: orange
-}
-.hell-scape{
-    background-color: red
-}
-
-#root{
+#ex-2{
     display: grid;
     grid-template-columns: repeat(10, 1fr)
   }
+
+button{
+      width: 50px;
+      height: 15px;
+      background-color: grey; 
+  }
+  
+label{
+    text-decoration: underline;
+    font-size: 12px;
+    color: darkred;
+    font-weight: bold;
+}
+
+.exercise {
+    margin-bottom: 10px;
+}

@@ -14,44 +14,58 @@ export class Sum extends Component {
 }
 
 // SPOT CHECK 2
-class MenuBar extends Component {
-  // YOUR CODE HERE...
+class Nav extends Component {
+  render() {
+    return (
+      <div id="nav">
+        <span>Home</span>
+        <span>About</span>
+      </div>
+    )
   }
-  
-  
+}
 
-  class LandingPage extends Component {
-
-    render() {
-    
-    return <h1>Welcome!</h1>
-    
-    }
-    
-    }
-
-class About extends Component {
+class LandingPage extends Component {
   // YOUR CODE HERE...
 }
+
+// SPOT CHECK 3
+class AboutUs extends Component {
+  render() {
+    return <p>This is an example of an about page~</p>
+  }
+}
 class Profile extends Component {
-  // YOUR CODE HERE...
+  render() {
+    return <p>This is an example of a user profile~</p>
+  }
 }
 
 export class App extends Component {
 
   render() {
+    let isUserLoggedIn = localStorage.getItem('loggedIn')
+    let componentToDisplay = isUserLoggedIn ?
+      <Profile /> :
+      <AboutUs />
     return (
       <div className="app">
         <div className="exercise" id="spotcheck-2">
           <label>Spotcheck 2:</label>
+          <Nav />
+          {/* YOUR CODE HERE... */}
         </div>
         <div className="exercise" id="spotcheck-3">
           <label>Spotcheck 3:</label>
-          {/* YOUR CODE HERE... */}
+          {componentToDisplay}
+        </div>
+        <div className="exercise" id="spotcheck-4">
+          <label>Spotcheck 4:</label>
+         {/* YOUR CODE HERE... */}
         </div>
         <div className="exercise" id="spotcheck-5">
-        <label>Spotcheck 5:</label>
-        {/* YOUR CODE HERE... */}
+          <label>Spotcheck 5:</label>
+          {/* YOUR CODE HERE... */}
         </div>
         <div className="exercise" id="ex-1">
           <label>Exercise 1:</label>
@@ -72,14 +86,14 @@ export class App extends Component {
 
 
 // SPOT CHECK 4
-{/* YOUR CODE HERE... */}
+export const Banner /* YOUR CODE HERE... */ 
 
 
 // SPOT CHECK 5
-export class AboutUs extends Component {
+export class About extends Component {
   render() {
     return (
- {/* YOUR CODE HERE... */}
+      {/* YOUR CODE HERE... */ }
     )
   }
 }
@@ -87,13 +101,13 @@ export class AboutUs extends Component {
 export class SignUp extends Component {
   render() {
     return (
-{/* YOUR CODE HERE... */}
+      {/* YOUR CODE HERE... */ }
     )
   }
 }
 
 export class Blurb extends Component {
   render() {
-{/* YOUR CODE HERE... */}
+    {/* YOUR CODE HERE... */ }
   }
 }
