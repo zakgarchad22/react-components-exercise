@@ -50,34 +50,57 @@ export class App extends Component {
       <AboutUs />
     return (
       <div className="app">
-        <div className="exercise" id="spotcheck-2">
-          <label>Spotcheck 2:</label>
-          <Nav />
-          {/* YOUR CODE HERE... */}
+
+        <div className="ex-space">
+          <h4 className="ex-title">Spotcheck 2</h4>
+          <div className="exercise" id="spotcheck-2">
+            <Nav />
+            {/* YOUR CODE HERE... */}
+          </div>
         </div>
-        <div className="exercise" id="spotcheck-3">
-          <label>Spotcheck 3:</label>
-          {componentToDisplay}
+
+        <div className="ex-space">
+          <h4 className="ex-title">Spotcheck 3</h4>
+          <div className="exercise" id="spotcheck-3">
+            {componentToDisplay}
+          </div>
         </div>
-        <div className="exercise" id="spotcheck-4">
-          <label>Spotcheck 4:</label>
-          {/* YOUR CODE HERE... */}
+
+        <div className="ex-space">
+
+          <h4 className="ex-title">Spotcheck 4</h4>
+          <div className="exercise" id="spotcheck-4">
+            {/* YOUR CODE HERE... */}
+          </div>
         </div>
-        <div className="exercise" id="spotcheck-5">
-          <label>Spotcheck 5:</label>
-          {/* YOUR CODE HERE... */}
+
+        <div className="ex-space">
+
+          <h4 className="ex-title">Spotcheck 5</h4>
+          <div className="exercise" id="spotcheck-5">
+            {/* YOUR CODE HERE... */}
+          </div>
         </div>
-        <div className="exercise" id="ex-1">
-          <label>Exercise 1:</label>
-          {/* YOUR CODE HERE... */}
+        <div className="ex-space">
+
+          <h4 className="ex-title">Exercise 1</h4>
+          <div className="exercise" id="ex-1">
+            {/* YOUR CODE HERE... */}
+          </div>
         </div>
-        <div className="exercise" id="ex-2">
-          <label>Exercise 2:</label>
-          {/* YOUR CODE HERE... */}
+        <div className="ex-space">
+
+          <h4 className="ex-title">Exercise 2</h4>
+          <div className="exercise" id="ex-2">
+            {/* YOUR CODE HERE... */}
+          </div>
         </div>
-        <div className="exercise" id="ex-4">
-          <label>Exercise 4:</label>
-          {/* YOUR CODE HERE... */}
+        <div className="ex-space">
+
+          <h4 className="ex-title">Exercise 4</h4>
+          <div className="exercise" id="ex-4">
+            {/* YOUR CODE HERE... */}
+          </div>
         </div>
       </div>
     )
