@@ -3,12 +3,7 @@ import React, { Component } from 'react';
 
 
 class Spamalot extends Component {
-
-    render() {
-
-        }
-        return 
-    
+// your code here...   
 }
 
 export default Spamalot

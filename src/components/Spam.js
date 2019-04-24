@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
 
-const Spam
+const Spam =()=>{}
 
 export default Spam

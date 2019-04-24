@@ -61,7 +61,7 @@ export class App extends Component {
         </div>
         <div className="exercise" id="spotcheck-4">
           <label>Spotcheck 4:</label>
-         {/* YOUR CODE HERE... */}
+          {/* YOUR CODE HERE... */}
         </div>
         <div className="exercise" id="spotcheck-5">
           <label>Spotcheck 5:</label>
@@ -86,28 +86,19 @@ export class App extends Component {
 
 
 // SPOT CHECK 4
-export const Banner /* YOUR CODE HERE... */ 
+export const Banner = () => { }
 
 
 // SPOT CHECK 5
 export class About extends Component {
-  render() {
-    return (
-      {/* YOUR CODE HERE... */ }
-    )
-  }
+  /* your code here... */
 }
 
+
 export class SignUp extends Component {
-  render() {
-    return (
-      {/* YOUR CODE HERE... */ }
-    )
-  }
+  /* your code here... */
 }
 
 export class Blurb extends Component {
-  render() {
-    {/* YOUR CODE HERE... */ }
-  }
+  /* your code here... */
 }
