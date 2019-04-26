@@ -52,10 +52,10 @@ describe("exercise4", () => {
         expect(navComponent.exists(), 'could not find Nav component').toBeTruthy()
         expect(menuComponent.exists(), 'could not find Menu component').toBeTruthy()
         expect(checkoutComponent.exists(), 'could not find Checkout component').toBeTruthy()
-        expect(itemComponent.text(), `The Item component should render a div with the word 'Item'. Instead we found ${itemComponent.text()}`).toBe('Item');
-        expect(navComponent.text(), `The NavBar component should render a div with the word 'NavBar'. Instead we found ${navComponent.text()}`).toBe('NavBar');
-        expect(menuComponent.text(), `The Menu component should render a div with the word 'Menu'. Instead we found ${menuComponent.text()}`).toContain('Menu');
-        expect(checkoutComponent.text(), `The Checkout component should render a div with the word 'Checkout'. Instead we found ${checkoutComponent.text()}`).toContain('Checkout');
+        expect(itemComponent.text().toLowerCase(), `The Item component should render a div with the word 'Item' (case insensitive). Instead we found ${itemComponent.text()}`).toContain('item');
+        expect(navComponent.text().toLowerCase(), `The NavBar component should render a div with the word 'NavBar' (case insensitive). Instead we found ${navComponent.text()}`).toContain('navbar');
+        expect(menuComponent.text().toLowerCase(), `The Menu component should render a div with the word 'Menu' (case insensitive). Instead we found ${menuComponent.text()}`).toContain('menu');
+        expect(checkoutComponent.text().toLowerCase(), `The Checkout component should render a div with the word 'Checkout' (case insensitive). Instead we found ${checkoutComponent.text()}`).toContain('checkout');
 
     })
 })
