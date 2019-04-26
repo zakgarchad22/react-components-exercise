@@ -109,7 +109,9 @@ export class App extends Component {
 
 
 // SPOT CHECK 4
-export const Banner = () => { }
+export const Banner = function () {
+
+}
 
 
 // SPOT CHECK 5
