@@ -6,14 +6,12 @@ import NavBar from './components/NavBar';
 import Checkout from './components/Checkout';
 import Menu from './components/Menu';
 
-
-
-// SPOT CHECK 1
+// Spot Check 1
 export class Sum extends Component {
-  // YOUR CODE HERE...
+  // your code here...
 }
 
-// SPOT CHECK 2
+// Spot Check 2
 class Nav extends Component {
   render() {
     return (
@@ -26,10 +24,10 @@ class Nav extends Component {
 }
 
 class LandingPage extends Component {
-  // YOUR CODE HERE...
+  // your code here...
 }
 
-// SPOT CHECK 3
+// Spot Check 3
 class AboutUs extends Component {
   render() {
     return <p>This is an example of an about page~</p>
@@ -48,6 +46,7 @@ export class App extends Component {
     let componentToDisplay = isUserLoggedIn ?
       <Profile /> :
       <AboutUs />
+
     return (
       <div className="app">
 
@@ -55,7 +54,7 @@ export class App extends Component {
           <h4 className="ex-title">Spotcheck 2</h4>
           <div className="exercise" id="spotcheck-2">
             <Nav />
-            {/* YOUR CODE HERE... */}
+            {/* your code here... */}
           </div>
         </div>
 
@@ -67,39 +66,37 @@ export class App extends Component {
         </div>
 
         <div className="ex-space">
-
           <h4 className="ex-title">Spotcheck 4</h4>
           <div className="exercise" id="spotcheck-4">
-            {/* YOUR CODE HERE... */}
+            {/* your code here... */}
           </div>
         </div>
 
         <div className="ex-space">
-
           <h4 className="ex-title">Spotcheck 5</h4>
           <div className="exercise" id="spotcheck-5">
-            {/* YOUR CODE HERE... */}
+            {/* your code here... */}
           </div>
         </div>
-        <div className="ex-space">
 
+        <div className="ex-space">
           <h4 className="ex-title">Exercise 1</h4>
           <div className="exercise" id="ex-1">
-            {/* YOUR CODE HERE... */}
+            {/* your code here... */}
           </div>
         </div>
-        <div className="ex-space">
 
+        <div className="ex-space">
           <h4 className="ex-title">Exercise 2</h4>
           <div className="exercise" id="ex-2">
-            {/* YOUR CODE HERE... */}
+            {/* your code here... */}
           </div>
         </div>
-        <div className="ex-space">
 
+        <div className="ex-space">
           <h4 className="ex-title">Exercise 4</h4>
           <div className="exercise" id="ex-4">
-            {/* YOUR CODE HERE... */}
+            {/* your code here... */}
           </div>
         </div>
       </div>
@@ -108,13 +105,13 @@ export class App extends Component {
 }
 
 
-// SPOT CHECK 4
+// Spot Check 4
 export const Banner = function () {
 
 }
 
 
-// SPOT CHECK 5
+// Spot Check 5
 export class About extends Component {
   /* your code here... */
 }
