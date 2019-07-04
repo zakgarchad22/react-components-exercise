@@ -39,6 +39,28 @@ class Profile extends Component {
   }
 }
 
+// Spot Check 4
+export const Banner = function () {
+
+}
+
+
+// Spot Check 5
+export class About extends Component {
+  /* your code here... */
+}
+
+
+export class SignUp extends Component {
+  /* your code here... */
+}
+
+export class Blurb extends Component {
+  /* your code here... */
+}
+
+
+
 export class App extends Component {
 
   render() {
@@ -104,23 +126,3 @@ export class App extends Component {
   }
 }
 
-
-// Spot Check 4
-export const Banner = function () {
-
-}
-
-
-// Spot Check 5
-export class About extends Component {
-  /* your code here... */
-}
-
-
-export class SignUp extends Component {
-  /* your code here... */
-}
-
-export class Blurb extends Component {
-  /* your code here... */
-}
