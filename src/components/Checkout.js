@@ -1,11 +1,6 @@
 import Item from "./Item";
 import React, { Component } from 'react';
 
+const Checkout = () => {}
 
-class Checkout extends Component {
-    render() {
-        return (<div>
-        </div>)
-    }
-}
 export default Checkout
